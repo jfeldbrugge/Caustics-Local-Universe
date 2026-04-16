@@ -1,3 +1,3 @@
-# Classification of compact two-dimensional manifolds
+# Caustics of the local universe
 
-See the documentation https://jfeldbrugge.github.io/2-Manifolds/
+See the documentation https://jfeldbrugge.github.io/Caustics-Local-Universe/
