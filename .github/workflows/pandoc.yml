@@ -19,8 +19,8 @@ jobs:
                 args: >-
                   index.md --css css/style.css -s --mathjax -t html5 -o index.html
 
-            - name: deploy
-              uses: JamesIves/github-pages-deploy-action@4.1.0
-              with:
-                branch: main
-                folder: build
+            # - name: deploy
+            #   uses: JamesIves/github-pages-deploy-action@4.1.0
+            #   with:
+            #     branch: main
+            #     folder: build
