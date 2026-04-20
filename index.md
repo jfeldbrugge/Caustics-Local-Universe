@@ -23,8 +23,11 @@ This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the 
 
 **Rotating:** [rotate_box_coma.mp4](figures/rotate_box_coma.mp4)
 
+![Rotating](figures/rotate_box_coma.mp4){width=100%}
+
 **Zoom-in:** [zoom_in_coma.mp4](figures/zoom_in_coma.mp4)
 
+![Zoom-in](figures/zoom_in_coma.mp4){width=100%}
 ---
 
 ## Caustic skeleton of Pisces-Perseus Supercluster
@@ -35,8 +38,11 @@ This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the 
 
 **Rotating:** [rotate_box_pp.mp4](figures/rotate_box_pp.mp4)
 
+![Rotating](figures/rotate_box_pp.mp4){width=100%}
+
 **Zoom-in:** [zoom_in_pp.mp4](figures/zoom_in_pp.mp4)
 
+![Zoom-in](figures/zoom_in_pp.mp4){width=100%}
 
 
 
