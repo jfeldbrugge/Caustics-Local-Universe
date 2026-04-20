@@ -1,0 +1,40 @@
+name: Build & Publish HTML with Pandoc
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    container:
+      image: pandoc/core:latest
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Fetch all branches/tags for proper git history (useful for citations)
+          fetch-depth: 0
+
+      - name: Convert Markdown to HTML
+        run: |
+          # Build all .md files in root, or specify your input file
+          pandoc index.md --css css/style.css -s --mathjax -t html5 -o index.html
+
+      - name: Verify output
+        run: ls -la *.html
+
+      - name: Deploy to GitHub Pages (on main branch only)
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: "Deploy HTML from commit ${{ github.sha }}"
