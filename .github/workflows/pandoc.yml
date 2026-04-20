@@ -1,40 +1,26 @@
-name: Build & Publish HTML with Pandoc
-
+name: Deploy pages
 on:
-  push:
-    branches: [main, master]
-  pull_request:
-    branches: [main, master]
-
+    push:
+        branches:
+          - main
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    
-    container:
-      image: pandoc/core:latest
-      
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          # Fetch all branches/tags for proper git history (useful for citations)
-          fetch-depth: 0
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: prepare
+              run: |
+                mkdir -p build
+                touch build/.nojekyll   
+            - name: pandoc
+              uses: docker://pandoc/core:2.12
+              with:
+                args: >-
+                  index.md --css css/style.css -s --mathjax -t html5 -o index.html
 
-      - name: Convert Markdown to HTML
-        run: |
-          # Build all .md files in root, or specify your input file
-          pandoc index.md --css css/style.css -s --mathjax -t html5 -o index.html
-
-      - name: Verify output
-        run: ls -la *.html
-
-      - name: Deploy to GitHub Pages (on main branch only)
-        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
-          publish_branch: gh-pages
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
-          commit_message: "Deploy HTML from commit ${{ github.sha }}"
+            - name: deploy
+              uses: JamesIves/github-pages-deploy-action@4.1.0
+              with:
+                branch: main
+                folder: build
