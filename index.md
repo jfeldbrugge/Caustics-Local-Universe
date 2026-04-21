@@ -47,8 +47,8 @@ This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the 
 
 
 
-<!-- <figure>
+<figure>
 <img src='figures/Manifold.png' width=40% />
  <figcaption> Fig. 1 - A compact two-dimensional manifold</figcaption>
 </figure>
- -->
+
