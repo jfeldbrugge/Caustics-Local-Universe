@@ -16,7 +16,7 @@ This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the 
 ## Caustic skeleton of Coma Cluster and Stickman
 
 
-**Description:** [This figure shows the caustic skeleton around the Coma Cluster in both Lagrangian space (top panels) and Eulerian space (bottom panels) in a $L = 100 $ Mpc box extracted from one example of a \texttt{Manticore-Local} Universe re-simulation (refer to as $M_1$). We use the smoothing scale of $\sigma =3$ Mpc. Left: $A_3$ walls with $A_4$ and $D_4$ filaments. Middle: Both $A_4$ and $D_4$ filaments. Right: $D_4$ filaments alone. The 3-dimensional first eigenvalue field of the deformation tensor is also included in the top Lagrangian-space panels, and the density field in the bottom Eulerian-space panels. The density is estimated with the Phase-Space Delaunay Tessellation Field Estimator (Feldbrugge 2024; Feldbrugge & Hertzsch 2025)]
+**Description:** [This figure shows the caustic skeleton around the Coma Cluster in both Lagrangian space (top panels) and Eulerian space (bottom panels) in a $L = 100$ Mpc box extracted from one example of a \texttt{Manticore-Local} Universe re-simulation (refer to as $M_1$). We use the smoothing scale of $\sigma =3$ Mpc. Left: $A_3$ walls with $A_4$ and $D_4$ filaments. Middle: Both $A_4$ and $D_4$ filaments. Right: $D_4$ filaments alone. The 3-dimensional first eigenvalue field of the deformation tensor is also included in the top Lagrangian-space panels, and the density field in the bottom Eulerian-space panels. The density is estimated with the Phase-Space Delaunay Tessellation Field Estimator (Feldbrugge 2024; Feldbrugge & Hertzsch 2025)]
 
 **Referenced in:** Section [4.1] / Figure [4]
 
