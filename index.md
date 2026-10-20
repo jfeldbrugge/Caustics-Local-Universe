@@ -16,7 +16,7 @@ include-before:
     ```
 ---
 
-This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the Coma Cluster node and the Pisces Perseus ridge (2026)](). We provide additional video material for Figures [4] and [8] referenced in the Section [4] of the text.
+This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the Coma Cluster node and the Pisces Perseus ridge (2026)](https://arxiv.org/abs/2604.22213). We provide additional video material for Figures [4] and [8] referenced in the Section [4] of the text.
 
 ---
 
