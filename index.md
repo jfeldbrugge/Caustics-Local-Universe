@@ -2,11 +2,18 @@
 title: Additional Video Material - 2026 *Caustic skeleton of local cosmic web* paper
 author: Amelie Read, Job Leon Feldbrugge, Celine Boehm, Rien van de Weygaert and Benjamin Hertzsch
 header-includes:
-    <link rel = "icon" href = "figures/icon.png" type = "image/x-icon"> 
+  - |
+    ```{=html}
+    <link rel="icon" href="figures/icon.png" type="image/x-icon">
+    ```
+include-before:
+  - |
+    ```{=html}
     <div class="topnav">
-      <a href="https://jfeldbrugge.github.io/index.html">Home</a>
+      <a href="https://jfeldbrugge.github.io/">Home</a>
       <a href="https://jfeldbrugge.github.io/Projects-and-Codes/">Projects and Code</a>
     </div>
+    ```
 ---
 
 This page accompanies the paper [Caustic Skeleton and the Local Cosmic Web: the Coma Cluster node and the Pisces Perseus ridge (2026)](). We provide additional video material for Figures [4] and [8] referenced in the Section [4] of the text.
